@@ -1,0 +1,25 @@
+[project]
+name = "phospho-docking"
+version = "0.1.0"
+description = "In silico phosphopeptide docking pipeline using AutoDock Vina"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "meeko",
+    "vina",
+    "rdkit",
+    "biopython",
+    "openbabel-wheel",
+    "pandas",
+    "matplotlib",
+    "jinja2",
+]
+
+[project.scripts]
+phospho-dock = "phospho_docking.cli:main"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+]
