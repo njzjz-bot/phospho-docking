@@ -9,7 +9,7 @@ dependencies = [
     "vina",
     "rdkit",
     "biopython",
-    "openbabel-wheel",
+    "openbabel>=3.2.0",
     "pandas",
     "matplotlib",
     "jinja2",
